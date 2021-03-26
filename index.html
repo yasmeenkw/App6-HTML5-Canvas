@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Yasmeen Washington
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+To create a drawing canvas that prints a rectangle on it.
  
 Known Issues:
-blah, blah, blah, blah
+none
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -40,8 +40,14 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
 
+var a_canvas = document.getElementById("a"); <!-- to help identify the canvas easily. --> 
 
-
+function draw_a() { <!-- this line is to find the canvas element-->
+  var a_canvas = document.getElementById("a");
+  var a_context = a_canvas.getContext("2d");
+  a_context.fillRect(50, 25, 150, 100); <!-- draws the rectangle and fills it with its current style. --> 
+}
+	
 <style>	
 .body {
      margin: 0em;
