@@ -38,6 +38,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+	
+	
+var a_canvas = document.getElementById("a"); // to help identify the canvas easily.
+
+function draw_a() { // this line is to find the canvas element
+  var a_canvas = document.getElementById("a");
+  var a_context = a_canvas.getContext("2d");
+  a_context.fillRect(50, 25, 150, 100) // draws the rectangle and fills it with its current style. 
+}
 </script>
 
 
@@ -67,15 +76,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </div>
 	
 <div id="content" class="w3-container">
-	<p>
-var a_canvas = document.getElementById("a"); <!-- to help identify the canvas easily. --> 
-
-function draw_a() { <!-- this line is to find the canvas element-->
-  var a_canvas = document.getElementById("a");
-  var a_context = a_canvas.getContext("2d");
-  a_context.fillRect(50, 25, 150, 100); <!-- draws the rectangle and fills it with its current style. --> 
-}
-	.</p>
+	<p> content goes here.</p>
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
