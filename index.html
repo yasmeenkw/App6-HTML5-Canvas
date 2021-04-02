@@ -58,11 +58,15 @@ function fillText() {
     ctx.fillText('Hi!!!!!', 150, 50); // text and position
 	
 }	
-	//var my_gradient = context.createLinearGradient(0, 0, 0, 100);
-	//my_gradient.addColorStop(0, "pink");
-	//my_gradient.addColorStop(1, "yellow");
-	//context.fillStyle = my_gradient;
-	//context.fillRect(50, 25, 150, 100);
+	
+function drawImage(image, 300, 50) {
+  var canvas = document.getElementById('yasmeen');
+  var context = canvas.getContext("2d");
+  var cat = new Image();
+  cat.src = "images/cat.png";
+  cat.onload = function() {
+    context.drawImage(cat, 300, 50);
+  };
   	
 </script>
 
@@ -104,10 +108,12 @@ function fillText() {
 	<a href="#one"  onclick="fillText();" class="w3-btn w3-black"> Name Time!</a> <!-- this line of code creates the button that results in the canvas-->
 	
 </div>	
+	<a href="#one"  onclick="draw_yasmeen();" class="w3-btn w3-black"> Image Time!</a> <!-- this line of code creates the button that results in the canvas-->
+	
+</div>	
 	<a href="#one"  onclick="draw_yasmeen();" class="w3-btn w3-black"> Reset Time!</a> <!-- this line of code creates the button that results in the canvas-->
 	
 </div>	
-	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
