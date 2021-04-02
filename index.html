@@ -49,8 +49,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	
 function fillText() {
-	context.font = "bold 12px sans-serif";
-	context.fillText("hello!", 248, 43); // this line draws the tezt
+    var canvas = document.getElementById('yasmeen');
+    var ctx = canvas.getContext('2d');
+    ctx.font = 'italic 18px Arial';
+    ctx.textAlign = 'center';
+    ctx. textBaseline = 'middle';
+    ctx.fillStyle = 'pink';  // color for the text
+    ctx.fillText('Hello World!', 150, 50); // text and position
 	
 }	
 	//var my_gradient = context.createLinearGradient(0, 0, 0, 100);
