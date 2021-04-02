@@ -59,7 +59,7 @@ function fillText() {
 	
 }	
 	
-("#resetCanvas").click(function(){
+("resetCanvas").click(function resetCanvas(){
   var canvas= document.getElementById('yasmeen');
   var ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0,  canvas.width, canvas.height);
@@ -111,7 +111,7 @@ function fillText() {
 	
 </div>
 
-	<a href="#one"  onclick="fillText();" class="w3-btn w3-black"> Name Time!</a> <!-- calls the text the function-->
+	<a href="#one"  onclick="fillText();" class="w3-btn w3-black"> Text Time!</a> <!-- calls the text the function-->
 	
 </div>	
 	<a href="#one"  onclick="drawImage();" class="w3-btn w3-black"> Image Time!</a> <!-- calls the image-->
