@@ -45,6 +45,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	 var yasmeen_canvas = document.getElementById("yasmeen");
   	 var yasmeen_context = yasmeen_canvas.getContext("2d");
   	 yasmeen_context.fillRect(50, 25, 150, 100); // draws the rectangle and fills it 
+	 var img=document.getElementById("puppy"); ctx.drawImage(img,10,10);
  }
 	
 	
@@ -65,7 +66,6 @@ function resetCanvas() {
     ctx.clearRect(0, 0,  canvas.width, canvas.height);
 };	
 	
-
 	
 </script>
 
@@ -100,14 +100,16 @@ function resetCanvas() {
 	<canvas id="yasmeen" width="600" height="600" style="border:1px solid #00000;"></canvas> 
 	<!--creating the canvas-->
 	
-	<a href="#one"  onclick="draw_yasmeen();" class="w3-btn w3-black"> Rectangle Time!</a> <!-- calls the rectangle-->
+	<img id="puppy" src="puppy.jpg" alt="Puppy Picture" width="200" height="240">
+	
+	<a href="#one"  onclick="draw_yasmeen();" class="w3-btn w3-black"> Rectangle!</a> <!-- calls the rectangle-->
 	
 </div>
 
-	<a href="#one"  onclick="fillText();" class="w3-btn w3-black"> Text Time!</a> <!-- calls the text the function-->
+	<a href="#one"  onclick="fillText();" class="w3-btn w3-black"> Text!</a> <!-- calls the text the function-->
 	
 </div>	
-	<a href="#one"  onclick="drawImage();" class="w3-btn w3-black"> Image Time!</a> <!-- calls the image-->
+	<a href="#one"  onclick="drawImage();" class="w3-btn w3-black"> Image!</a> <!-- calls the image-->
 	
 </div>
         <button id="resetCanvas">Reset</button> <!--<a href="#one" onclick="resetCanvas();" class="w3-btn w3-black"> Reset Time!</a> -->
