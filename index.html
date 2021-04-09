@@ -61,19 +61,19 @@ function fillText() {
 	
 function drawImage() {
   var canvas = document.getElementById("yasmeen");
-  var context = canvas.getContext("2d");
+  var ctx = canvas.getContext('2d');
   var puppy = new Image();
-  puppy.src = "images/puppy.jpg";
+  puppy.src = "puppy.jpg";
   puppy.onload = function() {
     context.drawImage(puppy, 0, 0);
-  };	
+  }
 //function drawImage() {
 //	var canvas = document.getElementById('yasmeen');
 //	var ctx = canvas.getContext('2d');
 //	var img=document.getElementById("puppy");
 //	ctx.drawImage(img,10,10);
 //	<img src="puppy.jpg" alt="cute puppy">
-}	
+//}	
 	
 function resetCanvas() {
   var canvas= document.getElementById('yasmeen');
