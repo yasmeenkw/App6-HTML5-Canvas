@@ -64,7 +64,7 @@ function drawImage() {
   var ctx = canvas.getContext('2d');
   var puppy = new Image();
   puppy.src = "puppy.jpg";
-  puppy.onload = () => context.drawImage(puppy, 0, 0);
+  puppy.onload = function drawImage() => context.drawImage(puppy, 0, 0);
   }
 //function drawImage() {
 //	var canvas = document.getElementById('yasmeen');
