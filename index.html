@@ -45,8 +45,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	 var yasmeen_canvas = document.getElementById("yasmeen");
   	 var yasmeen_context = yasmeen_canvas.getContext("2d");
   	 yasmeen_context.fillRect(50, 25, 150, 100); // draws the rectangle and fills it 
-	 var img=document.getElementById("puppy");
-	 ctx.drawImage(img,10,10);
  }
 	
 	
@@ -60,6 +58,15 @@ function fillText() {
     ctx.fillText('Hi!!!!!', 150, 50); // text and position
 }
 	
+	
+function drawImage() {
+  var canvas = document.getElementById("yasmeen");
+  var context = canvas.getContext("2d");
+  var puppy = new Image();
+  puppy.src = "images/puppy.jpg";
+  puppy.onload = function() {
+    context.drawImage(puppy, 0, 0);
+  };	
 //function drawImage() {
 //	var canvas = document.getElementById('yasmeen');
 //	var ctx = canvas.getContext('2d');
@@ -116,7 +123,7 @@ function resetCanvas() {
 	<a href="#one"  onclick="fillText();" class="w3-btn w3-black"> Text!</a> <!-- calls the text the function-->
 	
 </div>	
-	<a href="#one"  onclick="draw_yasmeen();" class="w3-btn w3-black"> Image!</a> <!-- calls the image-->
+	<a href="#one"  onclick="drawImage();" class="w3-btn w3-black"> Image!</a> <!-- calls the image-->
 	
 </div>
         <button id="resetCanvas">Reset</button> <!--<a href="#one" onclick="resetCanvas();" class="w3-btn w3-black"> Reset Time!</a> -->
