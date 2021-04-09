@@ -45,8 +45,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	 var yasmeen_canvas = document.getElementById("yasmeen");
   	 var yasmeen_context = yasmeen_canvas.getContext("2d");
   	 yasmeen_context.fillRect(50, 25, 150, 100); // draws the rectangle and fills it 
-	 var img=document.getElementById("puppy"); ctx.drawImage(img,10,10);
-	 //	<img id="puppy" src="puppy.jpg" alt="Puppy Picture" width="200" height="240">
  }
 	
 	
@@ -58,7 +56,12 @@ function fillText() {
     ctx. textBaseline = 'middle';
     ctx.fillStyle = 'pink';  // color for the text
     ctx.fillText('Hi!!!!!', 150, 50); // text and position
+}
 	
+function drawImage() {
+	var canvas = document.getElementById('yasmeen');
+	var ctx = canvas.getContext('2d');
+	var img=document.getElementById("puppy"); ctx.drawImage(img,10,10);
 }	
 	
 function resetCanvas() {
