@@ -67,8 +67,9 @@ function drawImage() {
   puppy.onload = () => yasmeen_context.drawImage(puppy, 0, 0);
 }
 
-function resetCanvas() {	
-const yasmeen_context = canvas.getContext('2d');
+function clearRect() {	
+  var canvas = document.getElementById("yasmeen");
+  var yasmeen_context = canvas.getContext('2d');
 yasmeen_context.clearRect(0, 0, canvas.width, canvas.height);
 }
 	
@@ -116,7 +117,7 @@ yasmeen_context.clearRect(0, 0, canvas.width, canvas.height);
 	<a href="#one"  onclick="drawImage();" class="w3-btn w3-black"> Image!</a> <!-- calls the image-->
 	
 </div>
-  	<a href="#one"  onclick="resetCanvas();" class="w3-btn w3-black"> Reset!</a> <!-- clears the canvas-->
+  	<a href="#one"  onclick="clearRect();" class="w3-btn w3-black"> Reset!</a> <!-- clears the canvas-->
 	
 </div>	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
